@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Saper
 {
-    public partial class Form1 : Form
+    public partial class FormSaper : Form
     {
-        public Form1()
+        public FormSaper()
         {
             InitializeComponent();
+        }
+
+        private void FormSaper_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
