@@ -15,6 +15,7 @@ namespace Saper
         public FormSaper()
         {
             InitializeComponent();
+            
         }
 
         private void FormSaper_Load(object sender, EventArgs e)

@@ -14,6 +14,7 @@ namespace Saper
         [STAThread]//
         static void Main()
         {
+            MatrixMaker.MakeMatrix();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormSaper());
