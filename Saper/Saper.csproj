@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drawing.cs" />
     <Compile Include="FormSaper.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +55,7 @@
     <Compile Include="MatrixMaker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkWithButoons.cs" />
     <EmbeddedResource Include="FormSaper.resx">
       <DependentUpon>FormSaper.cs</DependentUpon>
     </EmbeddedResource>

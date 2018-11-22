@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,7 @@ namespace Saper
                 for (int j = 0; j < width; j++)
                 {
                     numMatrix[i, j] = random.Next(0, 20);
-                    if (numMatrix[i, j] > 16)
+                    if (numMatrix[i, j] > 16) //16
                         countOfMines++;
                 }
 
@@ -63,15 +64,15 @@ namespace Saper
                                 numMatrix[i - 1, j + 1]++;
                     }
 
-            //var output = "";
-            //for (int i = 0; i < high; i++)
-            //{
-            //    for (int j = 0; j < width; j++)
-            //        output += matrix[i, j].ToString() + " ";
-            //    output += "\r\n";
-            //}
-            //File.Delete("out.txt");
-            //File.AppendAllText("out.txt", output);
+            var output = "";
+            for (int i = 0; i < high; i++)
+            {
+                for (int j = 0; j < width; j++)
+                    output += numMatrix[i, j].ToString() + " ";
+                output += "\r\n";
+            }
+            File.Delete("out.txt");
+            File.AppendAllText("out.txt", output);
         }
     }
 }
